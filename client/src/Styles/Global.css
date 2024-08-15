@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+.Row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Column{
+    flex: 50%;
+    width: 50%;
+}
+
+@media screen and (max-width: 980px){
+    .Row{
+        flex-wrap: nowrap;
+    }
+    .Column{
+        flex: 100%;
+        width: 100%;
+    }
+}

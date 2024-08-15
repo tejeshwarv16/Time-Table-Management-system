@@ -1,0 +1,176 @@
+.baseDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    height: 88vh;
+}
+
+.baseDiv > * {
+    flex: 1;
+  }
+
+.headerDiv{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.illuDiv{
+    display: flex;
+    height: 88vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #54BAB9;
+    border-radius: 0 30rem 30rem 0rem;
+}
+
+.contentDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 1rem auto;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+}
+
+.addButton, .deleteButton{
+    border: none;
+    outline: none;
+    background-color: #54BAB9;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.deleteButton{
+    background-color: #D80032;
+}
+
+table{
+    width:100%;
+}
+
+th{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+td{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.illuImg{
+    height: 250px;
+    width: 350px;
+}
+
+.inputDiv{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.inputDiv > * {
+    flex: 1;
+  }
+
+.inputLabel{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.contentInput{
+    border: none;
+    outline: none;
+    border-bottom: 0.1rem solid black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 25rem;
+}
+
+.contentInput option{
+    width: 25rem;
+}
+
+.button{
+    flex: 50%;
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: #54BAB9;
+    color: #fafafa;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.del{
+    background-color: #D80032;
+}
+
+@media screen and (max-width: 1185px){
+
+    .baseDiv{
+        margin-top: 0;
+    }
+    .illuImg{
+        height: 150px;
+        width: 250px;
+    }
+    .illuDiv{
+        flex: 100%;
+        width: 100%;
+        border-radius: 0 0 20rem 20rem;
+        height: 50vh;
+    }
+    .contentDiv{
+        flex: 100%;
+        width: 100%;
+        display: block;
+    }
+    .contentInput{
+        width: 100%;
+    }
+    .contentInput,.inputLabel{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .inputDiv{
+        text-align: center;
+    }
+    .contentInput,.inputLabel{
+        display: block;
+        width: 100%;
+    }
+    .contentInput{
+        margin: 0.5rem auto;
+    }
+    .illuDiv{
+        border-radius: 0 0 10rem 10rem;
+    }
+}

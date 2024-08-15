@@ -1,0 +1,37 @@
+.baseDiv1{
+    margin-top: 12vh;
+    height: 88vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.tableDiv1{
+    width: 100%;
+}
+
+.infoDiv{
+    flex:100%;
+    width: 100%;
+}
+
+.infoLine{
+    display: flex;
+    width: auto;
+}
+
+.label{
+    display: inline;
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.data{
+    display: inline;
+    flex: 1;    
+    font-size: 1.2rem;
+    font-weight: 400;
+}
